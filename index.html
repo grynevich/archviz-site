@@ -8,64 +8,52 @@
 </head>
 <body>
 
-    <!-- Навигация -->
     <header>
-        <div class="logo">ArchViz Service</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#brief">Brief</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
             </ul>
-            <button class="contact-btn">Contact</button>
         </nav>
-        <div class="lang-switch">
-            <select id="language-selector">
-                <option value="en">EN</option>
-                <option value="de">DE</option>
-                <option value="fr">FR</option>
-                <option value="es">ES</option>
-            </select>
-        </div>
     </header>
 
-    <!-- О сервисе -->
-    <section id="about">
-        <h1>Accelerating Real Estate Sales</h1>
-        <p>High-quality marketing materials for effective real estate sales.</p>
+    <section id="hero">
+        <h1>Enhancing Real Estate Marketing</h1>
+        <p>We accelerate property sales by increasing their value.</p>
     </section>
 
-    <!-- Услуги -->
     <section id="services">
         <h2>Our Services</h2>
-        <div class="service">
-            <h3>Static Visualizations</h3>
-            <p>High-resolution 4K, 6K, 7K renderings for marketing purposes.</p>
-        </div>
-        <div class="service">
-            <h3>3D Printed Models</h3>
-            <p>Monochrome polymer models for project presentations.</p>
-        </div>
+        <ul>
+            <li>Static Renderings (4K-7K Resolution)</li>
+            <li>360 Panorama (4K Resolution)</li>
+            <li>3D Model Printing (Monochrome Polymer)</li>
+            <li>Marketing Support (Brochures, Banners, Identity, Websites)</li>
+        </ul>
     </section>
 
-    <!-- Бриф -->
     <section id="brief">
-        <h2>Project Brief</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label for="name">Your Name</label>
+        <h2>Fill Out the Brief</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="project">Project Description</label>
-            <textarea id="project" name="project" required></textarea>
+            <label for="message">Project Details:</label>
+            <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send Brief</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>В© 2025 Architectural Visualization. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
