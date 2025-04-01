@@ -3,66 +3,59 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* Навигация */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
     background: #333;
     color: white;
-    align-items: center;
+    padding: 15px 0;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.contact-btn {
-    background: #ff6600;
+#hero {
+    padding: 50px;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+#services, #brief {
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #333;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
-}
-
-.lang-switch select {
-    padding: 5px;
-}
-
-/* Секции */
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-.service {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 60%;
-    border-radius: 5px;
-}
-
-/* Форма */
-form {
-    background: white;
-    padding: 20px;
-    width: 50%;
-    margin: 20px auto;
-    border-radius: 5px;
-}
-
-input, textarea, select {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
 }
